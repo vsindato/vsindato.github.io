@@ -29,10 +29,38 @@
       <!-- Content -->
       <div class="col-5">
         <ul class="list-group list-group-flush">
+          <!-- Bandits -->
+          <!-- <li class="list-group-item">
+            <h3><u>Bandits</u></h3>
+            <p><b>Setting</b>: MIT | Cambridge, MA | Fall 2020 - Current </p>
+            <p><b>Keywords</b>: Multi-armed bandits, Exploration vs Exploitation</p>
+            <p><b>Context</b><br>
+              The multi-armed bandit problem, MAB, is a host of problems where an agent is faced with multiple choices of action; each of the actions returns some scalar value (also called payoff/reward) according to some probability distribution that is unknown to the agent. The agent is given a finite number of turns to select an action. In those turns, their goal is defined as selecting actions such that they maximize their payoffs.
+            </p>
+            <p><b>Description</b><br>
+              This project is new and in collaboration with two of my CS peers. My aim is to implement the existing algorithms first and try to design others.
+            </p>
+            <p><b>Tools</b>: Git, Python</p>
+            <p><b>Results</b>: <a href="#" target="blank">Report</a></p>
+            <p><b>Resources</b>: <a href="#" target="blank">Project proposal</a>
+          </li> -->
+          <!-- Exploring fairness in Aurora -->
+          <li class="list-group-item">
+            <h3><u>Fair Aurora</u></h3>
+            <p><b>Setting</b>: Networks course | Cambridge, MA | Fall 2020 - Ongoing </p>
+            <p><b>Keywords</b>: Congestion control, Fairness, Aurora </p>
+            <p><b>Context</b><br> At its core, the problem of congestion control is about managing the behavior of senders in a network to optimize for throughput and fairness. Tens of protocols have been designed since the birth of TCP, some being variants of it and others novel. <a href="https://pbg.cs.illinois.edu/papers/jay19aurora.pdf" target="_blank">Aurora </a> is one such protocol. Introduced in 2019, it was inspired by the recent success of reinforcement learning in domains that involve long-term decision-making. Aurora’s major strength lies in its ability to quickly adapt to new network conditions such as changes in link bandwidths, queue sizes, latencies and packet losses. When evaluated alongside standard protocols such as TCP-CUBIC, that adaptability has been shown to give it a significant edge in terms of link utilization.</p>
+            <p><b>Description</b><br>
+              An open challenge that remains is designing a solution to ensure that Aurora senders share the network's resources fairly with senders using other protocols. The reward function that’s used in training Aurora is solely focused on ensuring high throughput, low latency, and fewer packet losses. If placed alongside senders using TCP, it’s been rightfully speculated that given what that reward function emphasizes, Aurora would learn to behave in a way that causes those TCP senders to always back-off in order to get higher values of the reward function. We consider this an opportunity to explore alternative reward functions that could be used to train Aurora such that it not only prioritizes maximizing throughput but also learns how many other senders it’s sharing, say, a bottleneck link with and how it can balance maximizing throughput and fairly sharing that available bandwidth.
+            </p>
+            <p><b>Tools</b>: Git, Python</p>
+            <p><b>Results</b>: <a href="./papers/fair-aurora-report.pdf" target="blank">Report</a></p>
+            <p><b>Resources</b>: <a href="https://pbg.cs.illinois.edu/papers/jay19aurora.pdf" target="blank">Aurora paper</a>
+          </li>
           <!-- ABR -->
           <li class="list-group-item">
             <h3><u>Proportional control for bitrate selection</u></h3>
-            <p><b>Setting</b>: Networks class (MIT) | Cambridge, MA | Fall 2020 </p>
+            <p><b>Setting</b>: Networks class | Cambridge, MA | Fall 2020 </p>
             <p><b>Keywords</b>: Bitrate Selection, Buffer, Quality of Experience (QoE) </p>
             <p><b>Context</b><br> 6.829 is a project-based networks course that covers a broad range of core topics including congestion control (both end-to-end and network-assisted), routing, decentralized systems, and more. </p>
             <p><b>Description</b><br>
