@@ -1,5 +1,7 @@
 #profile_picture {
-  width: 10rem;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
 }
 
 a {
