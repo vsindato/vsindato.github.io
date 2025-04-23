@@ -34,16 +34,37 @@
     <!-- Content -->
     <div class="col-6">
       <ul class="list-group list-group-flush">
-        <!-- Chipper Cash -->
+        <!-- Chime -->
         <li class="list-group-item pt-0">
+          <h4>chime</h4>
+          <p><b>Role</b>: <span class="badge badge-success">full-time</span></p>
+          <p><b>Location</b>: San Francisco, CA | October 2024 - Current </p>
+          <p><b>Context</b>: <a href="https://www.chime.com/" alt="Chime" target="_blank">chime.com</a></p>
+          <p>
+            Developing the merchant rewards feature to deliver personalized deals and offers to members.
+          </p>
+          <p><b>Stack</b>: react-native, graphql, ruby & rails </p>
+        </li>
+        <!-- thirty-six.co -->
+        <li class="list-group-item">
+          <h4>thirty-six.co</h4>
+          <p><b>Role</b>: <span class="badge badge-warning">nights & weekends</span></p>
+          <p><b>Location</b>: San Francisco, CA | June 2024 - Current </p>
+          <p><b>Context</b>: <a href="https://thirty-six.co/" alt="thirty-six.co" target="_blank">thirty-six.co</a></p>
+          <p>
+            Hyper-personalized ACT test prep for high schoolers
+          </p>
+        </li>
+        <!-- Chipper Cash -->
+        <li class="list-group-item">
           <h4>chipper cash</h4>
           <p><b>Role</b>: <span class="badge badge-success">full-time</span></p>
           <p><b>Location</b>: San Francisco, CA (Remote) | July 2021 - July 2024 </p>
           <p><b>Context</b>: <a href="https://chippercash.com/" alt="Chipper Cash" target="_blank">chippercash.com</a></p>
-          <p><b>Description</b><br>
+          <p>
             Building pieces of the data infrastructure that supports our growth, commerce, and compliance efforts
           </p>
-          <p><b>Tools</b>: python, typescript, react-native, node.js, sql </p>
+          <p><b>Stack</b>: python, typescript, react-native, node.js, sql </p>
         </li>
         <!-- Sauce-pricing -->
         <li class="list-group-item">
@@ -51,7 +72,7 @@
           <p><b>Role</b>: <span class="badge badge-warning">internship</span></p>
           <p><b>Location</b>: Los Angeles, CA (Remote) | January 2021 </p>
           <p><b>Context</b>: <a href="https://saucepricing.com/" alt="Sauce Pricing" target="_blank">saucepricing.com</a></p>
-          <p><b>Description</b><br>
+          <p>
             In this month-long project, I worked closely with the co-founders in implementing the customer-facing
             front-end of the product.
             We used React.js for building the product's pages. We then used Apollo and GraphQL for querying and mutating
@@ -59,58 +80,7 @@
             which was hosted on MongoDB. This was an immense learning experience and have grown confident with back-end
             dev through it.
           </p>
-          <p><b>Tools</b>: javascript, react.js, apollo, graphql, mongodb</p>
-        </li>
-        <!-- Exploring fairness in Aurora -->
-        <li class="list-group-item">
-          <h4>fair aurora</h4>
-          <p><b>Role</b>: <span class="badge badge-primary">project</span></p>
-          <p><b>Location</b>: Networks course | Cambridge, MA | Fall 2020 </p>
-          <p><b>Context</b><br> At its core, the problem of congestion control is about managing the behavior of senders
-            in a network to optimize for throughput and fairness. Tens of protocols have been designed since the birth
-            of TCP, some being variants of it and others novel. <a
-              href="https://pbg.cs.illinois.edu/papers/jay19aurora.pdf" target="_blank">Aurora </a> is one such
-            protocol. Introduced in 2019, it was inspired by the recent success of reinforcement learning in domains
-            that involve long-term decision-making. Aurora’s major strength lies in its ability to quickly adapt to new
-            network conditions such as changes in link bandwidths, queue sizes, latencies and packet losses. When
-            evaluated alongside standard protocols such as TCP-CUBIC, that adaptability has been shown to give it a
-            significant edge in terms of link utilization.</p>
-          <p><b>Description</b><br>
-            An open challenge that remains is designing a solution to ensure that Aurora senders share the network's
-            resources fairly with senders using other protocols. The reward function that’s used in training Aurora is
-            solely focused on ensuring high throughput, low latency, and fewer packet losses. If placed alongside
-            senders using TCP, it’s been rightfully speculated that given what that reward function emphasizes, Aurora
-            would learn to behave in a way that causes those TCP senders to always back-off in order to get higher
-            values of the reward function. We consider this an opportunity to explore alternative reward functions that
-            could be used to train Aurora such that it not only prioritizes maximizing throughput but also learns how
-            many other senders it’s sharing, say, a bottleneck link with and how it can balance maximizing throughput
-            and fairly sharing that available bandwidth.
-          </p>
-          <p><b>Tools</b>: python</p>
-          <p><b>Results</b>: <a href="./papers/fair-aurora-report.pdf" target="blank">report</a></p>
-        </li>
-        <!-- ABR -->
-        <li class="list-group-item">
-          <h4>bitrate selection</h4>
-          <p><b>Role</b>: <span class="badge badge-primary">project</span></p>
-          <p><b>Location</b>: Networks class | Cambridge, MA | Fall 2020 </p>
-          <p><b>Context</b><br> 6.829 is a project-based networks course that covers a broad range of core topics
-            including congestion control (both end-to-end and network-assisted), routing, decentralized systems, and
-            more. </p>
-          <p><b>Description</b><br>
-            The video streaming set-up is as follows: There's a client (eg. youtube app) that maintains a buffer of some
-            size. As the user is watching a video, the client is actively downloading packets from a server (eg. youtube
-            server) over a link/connection that has a varying throughput. These incoming packets, encoded in multiple
-            bitrates, are queued in the client buffer - waiting to be played. The main question is at what bitrate
-            should the client play the in-buffer packets to optimize an overall measure of <i>Quality of Experience</i>
-            (QoE). More of the problem description can be found <a
-              href="https://en.wikipedia.org/wiki/Adaptive_bitrate_streaming" target="blank">here</a>.
-          </p>
-          <p><b>Tools</b>: python</p>
-          <p><b>Results</b>: The course staff prepared the code that simulated the client and network. I implemented a
-            feedback-control based approach which maintained a running average of the connection capacity and nudged the
-            selected bitrate towards that average.</p>
-          <p><b>Resources</b>: <a href="https://github.mit.edu/vsindato/6.829-lab3" target="blank">repo</a>
+          <p><b>Stack</b>: javascript, react.js, apollo, graphql, mongodb</p>
         </li>
         <!-- School-book -->
         <li class="list-group-item">
@@ -127,75 +97,17 @@
             to directly witness how the information they shared with others spread in their network. I was responsible
             for designing and developing School-book’s front-end and back-end.
           </p>
-          <p><b>Tools</b>: python, javascript, bootstrap, socket.io, react.js, express.js</p>
+          <p><b>Stack</b>: python, javascript, bootstrap, socket.io, react.js, express.js</p>
           <p><b>Results</b>: In a period of ~2 months, we used school-book in 5 workshops with over 100 students total.
           </p>
           <p><b>Resources</b>: <a href="https://www.sciencedirect.com/science/article/pii/S2666920X21000345" target="blank">paper</a> | <a
               href="https://aieducation.mit.edu/daily/index.html" target="blank">project page</a></p>
         </li>
-        <!-- Affdex+TeleHealth -->
-        <li class="list-group-item">
-          <h4>affdex</h4>
-          <p><b>Role</b>: <span class="badge badge-warning">internship</span></p>
-          <p><b>Location</b>: Affectiva | Remote | Summer 2020 </p>
-          <p><b>Context</b><br> Affectiva is an AI company that uses and develops computer vision and natural language
-            processing technologies, combined with a lot of in-house curated datasets to do affect appraisal along
-            multiple modalities. Their software’s applications span multiple industries including gaming, robotics,
-            education, healthcare, experiential marketing, retail, human resources etc. </p>
-          <p><b>Description</b><br>
-            On my team’s month-long project, we set out to apply Affdex, Affectiva’s tool that’s tuned to recognize a
-            host of facial expressions, to virtual patient-doctor interactions. Our solution was a web application that
-            executed real-time emotion recognition over 1:1 video calls. From the doctor’s side, we used Affectiva’s
-            Affdex SDK and Zoom’s web SDK to process the video feeds from them and their patient. We then slightly
-            modified the Zoom interface by adding a ‘Get Analysis’ button that the doctor could use at the end of the
-            session to see charts of the session’s expressions by both themselves and their patient.
-          </p>
-          <p><b>Tools</b>: html+css, javascript, zoom sdk</p>
-          <p><b>Results</b>: My team and I presented to a panel of Affectiva engineers, some of whom developed Affdex.
-          </p>
-          <p><b>Resources</b>: <a href="https://github.com/vsindato/Goleador" target="blank">code</a></p>
-        </li>
-
-        <!-- Maze-escape -->
-        <li class="list-group-item">
-          <h4>maze-escape</h4>
-          <p><b>Role</b>: <span class="badge badge-primary">project</span></p>
-          <p><b>Location</b>: MIT | Cambridge, MA | Fall & Spring 2019 </p>
-          <p><b>Context</b><br> I did this project as a follow-up to the cartpole-balancing project I write about below
-          </p>
-          <p><b>Description</b><br>
-            My objective was to get hands-on experience with some elementary model-free RL algorithms such as Q-learning
-            by applying them to the task of learning the shortest-path out of a maze.
-          </p>
-          <p><b>Tools</b>: python, openai gym</p>
-          <p><b>Results</b>: I was fortunate to deliver a brief presentation on it in a project-based class </p>
-          <p><b>Resources</b>: <a href="https://github.com/vsindato/maze-escape" target="blank">code</a> </p>
-        </li>
-
-        <!-- Cartpole-balancing -->
-        <li class="list-group-item">
-          <h4>cartpole-balancing</h4>
-          <p><b>Role</b>: <span class="badge badge-primary">project</span></p>
-          <p><b>Location</b>: MIT | Cambridge, MA | Fall 2019 </p>
-          <p><b>Context</b><br> After taking 6.036 (MIT's introductory ML class), I developed an interest in
-            reinforcement learning. RL is about training an agent to make a series of optimal decisions so that it's
-            able to achieve some long-term objective. Examples of areas that RL has been applied include games,
-            robotics, trading, advertising and many others.</p>
-          <p><b>Description</b><br>
-            For this project, my objective was to apply this learning technique to a simpler environment, namely,
-            balancing a pole on a moving cart. A full description of the cartpole problem can be found <a
-              href="https://github.com/openai/gym/wiki/CartPole-v0">here</a>
-          </p>
-          <p><b>Tools</b>: python, openai gym</p>
-          <p><b>Results</b>: This was my first RL project! It was more of a hands-on learning experience than anything
-            else. </p>
-          <p><b>Resources</b>: <a href="https://github.com/vsindato/cartpole-balancing" target="blank">code</a></p>
-        </li>
       </ul>
     </div>
 
     <div class="col-4">
-      <a class="pt-4 sticky-top" href="https://github.com/vsindato">[Github]</a>
+      <a class="pt-4 sticky-top" href="https://github.com/vsindato">[github]</a>
     </div>
 
 </body>
